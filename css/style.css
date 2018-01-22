@@ -1,0 +1,50 @@
+
+@@charset "UTF-8";
+@media only screen and (min-width:980px) {
+  .onlymobile {
+    display: none !important;
+  }
+  .onlyweb {
+    display:block !important;
+  }
+}
+@media only screen and (max-width:980px) {
+  .onlyweb {
+    display: none !important;
+  }
+  .onlymobile {
+    display:block !important;
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+}
+@media only screen and (max-width:700px) {
+    .navbar-fixed {
+      height: 64px;
+    }
+}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  text-align: center;
+  font-family: 'Nanum Gothic', serif;
+
+/* GOOGLE MAP START */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* GOOGLE MAP END */
+}
+
+
+/* GOOGLE MAP */
+#map {
+  height: 100%;
+}
+
+li.br {
+  min-height: 0;
+  height: 1px;
+  margin: 8px 0 0 0;
+}
