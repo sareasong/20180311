@@ -1,0 +1,150 @@
+
+@charset "UTF-8";
+.toggle-nav {
+  display:none;
+}
+@media only screen and (min-width:980px) {
+  .onlymobile {
+    display: none !important;
+  }
+  .onlyweb {
+    display:block !important;
+  }
+
+  #hello {
+    background-color:red !important;
+  }
+  .wrap {
+    width:90%;
+  }
+}
+@media only screen and (max-width:860px) {
+  .onlyweb {
+    display: none !important;
+  }
+  .onlymobile {
+    display:block !important;
+  }
+  #hello {
+    background-color:blue !important;
+  }
+
+  .menu {
+    /* position:relative; */
+    position:fixed;
+    display:inline-block;
+  }
+  .menu ul.active {
+    display:none;
+  }
+  .menu ul {
+    width:100%;
+    position:absolute;
+    top:120%;
+    left:0px;
+    padding:10px 18px;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:3px;
+    background:#303030;
+  }
+  .menu ul:after {
+    width:0px;
+    height:0px;
+    position:absolute;
+    top:0%;
+    left:22px;
+    content:'';
+    transform:translate(0%, -100%);
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-bottom:7px solid #303030;
+  }
+  .menu li {
+    margin:5px 0px 5px 0px;
+    float:none;
+    display:block;
+  }
+  .menu a {
+    display:block;
+  }
+  .toggle-nav {
+    padding:20px;
+    float:left;
+    display:inline-block;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:3px;
+    background:#303030;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+    color:#777;
+    font-size:20px;
+    transition:color linear 0.15s;
+  }
+  .toggle-nav:hover, .toggle-nav.active {
+    text-decoration:none;
+    color:#66a992;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .menu {
+    /* position:relative; */
+    position:fixed;
+    width:100%;
+    padding:10px 18px;
+    box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+    border-radius:3px;
+    background:#303030;
+  }
+}
+
+@media only screen and (max-width:700px) {
+    .navbar-fixed {
+      height: 64px;
+    }
+}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  text-align: center;
+  font-family: 'Nanum Gothic', serif;
+
+/* GOOGLE MAP START */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* GOOGLE MAP END */
+}
+
+
+.menu ul {
+  display:inline-block;
+}
+.menu li {
+  margin:0px 50px 0px 0px;
+  float:left;
+  list-style:none;
+  font-size:17px;
+}
+.menu li:last-child {
+  margin-right:0px;
+}
+.menu a {
+  text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+  color:#777;
+  transition:color linear 0.15s;
+}
+.menu a:hover, .menu .current-item a {
+  text-decoration:none;
+  color:#66a992;
+}
+
+
+/* GOOGLE MAP */
+#map {
+  height: 100%;
+}
+
+li.br {
+  min-height: 0;
+  height: 1px;
+  margin: 8px 0 0 0;
+}
