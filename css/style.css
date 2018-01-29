@@ -5,9 +5,7 @@
   display:none;
 }
 body{
-  /* font-family: 'Roboto Mono', monospace; */
-  /* font-family: 'Courgette', cursive; */
-  font-family: 'Sriracha','Roboto Mono','Courgette';
+  /* font-family: 'Sriracha','Roboto Mono','Courgette'; */
   text-align:center;
   width:98%;
   border:1px solid #D4AF37;
