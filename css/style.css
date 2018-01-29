@@ -151,6 +151,10 @@ nav {
     /* text-decoration:none; */
     color:#FFFFFF;
   }
+
+  .thumb {
+    margin:0px !important;
+  }
 }
 
 #gallery .sub_block {
