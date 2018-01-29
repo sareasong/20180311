@@ -27,22 +27,38 @@
   </div>
   <div id="gallery" class="container">
     <div>
-      <img src="img/pich1.png"/>
-      <img src="img/pich2.png"/>
+      <a href="pich1.html" target="_blank">
+        <img src="img/pich1.png"/>
+      </a>
+      <a href="pich2.html" target="_blank">
+        <img src="img/pich2.png"/>
+      </a>
     </div>
     <div>
-      <img src="img/picw1.png"/>
+      <a href="picw1.html" target="_blank">
+        <img src="img/picw1.png"/>
+      </a>
     </div>
     <div>
-      <img src="img/pich3.png"/>
-      <img src="img/pich4.png"/>
+      <a href="pich3.html" target="_blank">
+        <img src="img/pich3.png"/>
+      </a>
+      <a href="pich4.html" target="_blank">
+        <img src="img/pich4.png"/>
+      </a>
     </div>
     <div>
-      <img src="img/picw2.png"/>
+      <a href="picw2.html" target="_blank">
+        <img src="img/picw2.png"/>
+      </a>
     </div>
     <div>
-      <img src="img/pich5.png"/>
-      <img src="img/pich6.png"/>
+      <a href="pich5.html" target="_blank">
+        <img src="img/pich5.png"/>
+      </a>
+      <a href="pich6.html" target="_blank">
+        <img src="img/pich6.png"/>
+      </a>
     </div>
   </div>
   <div id="location" class="container">
@@ -52,14 +68,14 @@
     <script>
       var mapContainer = document.getElementById('map'), // 지도를 표시할 div
           mapOption = {
-              center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+              center: new daum.maps.LatLng(37.5005680, 127.0033210),
               level: 3 // 지도의 확대 레벨
           };
 
       var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
       // 마커가 표시될 위치입니다
-      var markerPosition  = new daum.maps.LatLng(33.450701, 126.570667);
+      var markerPosition  = new daum.maps.LatLng(37.5005680, 127.0033210);
 
       // 마커를 생성합니다
       var marker = new daum.maps.Marker({
