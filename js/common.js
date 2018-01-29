@@ -13,7 +13,6 @@ function closeWin(){
 // IMAGE CLICK -> PAGE LINK
 $(document).ready(function() {
   $(".thumb").click(function(){
-    alert("click");
     var id= $(this).attr("id");
     var link_id= id + ".html";
     window.open(link_id, '_blank');
