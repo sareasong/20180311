@@ -7,35 +7,52 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <script src="js/jquery-3.3.1.js" ></script>
   <script src="js/common.js"></script>
+
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0bb13ea002a02ebdb988fb5363ca50b"></script>
 </head>
 <body>
-  <div style="width:100%;z-index:1;height:50px;display:block;backgroun-color:#FFFFFF">
+  <div id="mndiv" >
     <nav class="menu">
       <a class="toggle-nav">
-        <!-- &#9776; -->
         <img src="img/mobile.png" style="width:200px;float:right;"/>
       </a>
       <ul class="active">
         <li class="current-item"><a href="#home">2018.03.11</a></li>
-        <li><a href="#we">WE</a></li>
         <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#location">LOCATION</a></li>
       </ul>
-
     </nav>
   </div>
   <div id="home" class="container" style="">
-    <image src="img/hello.png"></image>
-
-  </div>
-  <div id="we" class="container">
-    WE
+    <image src="img/hello_.png"></image>
   </div>
   <div id="gallery" class="container">
-    GALLERY
+    <div>
+      <img src="img/pich1.png"/>
+      <img src="img/pich2.png"/>
+    </div>
+    <div>
+      <img src="img/picw1.png"/>
+    </div>
+    <div>
+      <img src="img/pich3.png"/>
+      <img src="img/pich4.png"/>
+    </div>
+    <div>
+      <img src="img/picw2.png"/>
+    </div>
+    <div>
+      <img src="img/pich5.png"/>
+      <img src="img/pich6.png"/>
+    </div>
   </div>
   <div id="location" class="container">
     LOCATION
+    <div id="map" style="width:400px;height:400px;"></div>
+  </div>
+
+  <div id="footer">
+    @SSONG
   </div>
 
 </body>
