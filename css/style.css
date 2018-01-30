@@ -186,3 +186,12 @@ nav {
   width:90%;
   height:400px;
 }
+
+button {
+  background-color: #D4AF37;
+  color:#FFFFFF;
+  border:1px solid #D4AF37;
+  margin:20px;
+  border-radius:5px;
+
+}
