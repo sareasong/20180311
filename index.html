@@ -1,14 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>2018.03.11</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body style="text-align:center;border-style:none">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width">
+  <title>2018.03.11</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b0bb13ea002a02ebdb988fb5363ca50b"></script>
+  <script src="js/jquery-3.3.1.js" ></script>
+  <script src="js/common.js"></script>
+</head>
+<body>
+  <div id="mndiv" >
+    <nav class="menu">
+      <a class="toggle-nav">
+        <img src="img/mobile.png" style="width:200px;float:right;"/>
+      </a>
+      <ul class="active">
+        <li class="current-item"><a href="index.html">HOME</a></li>
+        <li><a href="#home">2018.03.11</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#location">LOCATION</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="home" class="container" style="">
+    <image src="img/hello_.png"></image>
+  </div>
+  <div id="gallery" class="container">
+    <div class="sub_block">
+        <img src="img/pich1.png" id="pich1" class="thumb"
+              style="margin-right:19px;"/>
+
+        <!-- <img src="img/pich1_d.png" id="pich1" class="thumb"
+             style="margin-right:19px;"
+             onmouseover="this.src='img/pich1.png'"
+             onmouseout="this.src='img/pich1_d.png'"/> -->
+
+        <img src="img/pich2.png" id="pich2" class="thumb"
+              style="margin-left:19px;"/>
+    </div>
+    <div class="sub_block">
+        <img src="img/picw1.png" id="picw1" class="thumb"
+              style="margin:40px auto 40px auto;"/>
+    </div>
+    <div class="sub_block">
+      <img src="img/pich3.png" id="pich3" class="thumb"
+            style="margin-right:19px;"/>
+
+      <img src="img/pich4.png" id="pich4" class="thumb"
+            style="margin-left:19px;"/>
+    </div>
+    <div class="sub_block">
+      <img src="img/picw2.png" id="picw2" class="thumb"
+            style="margin:40px auto 40px auto;"/>
+    </div>
+    <div class="sub_block">
+      <img src="img/pich5.png" id="pich5" class="thumb"
+            style="margin-right:19px;"/>
+
+      <img src="img/pich6.png" id="pich6" class="thumb"
+            style="margin-left:19px;"/>
+    </div>
+  </div>
+  <div id="location" class="container">
+    <img src="img/thankyou.png" style="width:213px"/>
     <br />
-    <a href="wedding.html">
-      <img src="img/main.png" style="max-width:98%" id="indexImg"/>
+    <br />
+    <div id="address">
+      <font color="#416e51">
+        <h1>아펠가모 반포</h1>
+      </font>
+      <font color="#D4AF37">
+        <h3>2018.03.11 15:30</h3>
+      </font>
+      <br />
+      서울특별시 서초구 반포대로 235 (반포동), 반포 효성빌딩 LL층
+      <br />
+      02-3431-0230 / 주차 200대 가능
+    </div>
+    <br />
+
+    <div style="margin:auto">
+      <table style="margin:auto">
+        <tr>
+          <td class="title">
+            버스
+          </td>
+          <td class="content">
+            <font color="blue">Blue</font> 간선 405, 740
+            <br />
+            <font color="green">Green</font> 지선 5413
+            <br />
+            <font color="red">공항버스</font> 6703
+            <br />
+            ※ 서울 지방 조달청역 하차
+            <!-- <br />
+            반포 효성빌딩 LL층 -->
+          </td>
+        </tr>
+        <tr>
+          <td class="title">
+            지하철
+          </td>
+          <td class="content">
+            <font color="green">고속터미널역 5번 출구</font>
+            <br />
+            (3호선, 7호선, 9호선)
+            <br />
+            방향으로 나와 서래공원 방면 신호등 건넌 후 첫번째 건물
+            <!-- <br />
+            (반포 효성빌딩) LL층 -->
+          </td>
+        </tr>
+
+      </table>
+    </div>
+    <a href="http://map.daum.net/link/to/아펠가모반포,37.5009666,127.00333" target="_blank">
+       <button>다음길찾기바로가기</button>
     </a>
-  </body>
+    <div id="map"></div>
+
+    <script>
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+          mapOption = {
+              center: new daum.maps.LatLng(37.5009666, 127.00333),
+              level: 3 // 지도의 확대 레벨
+          };
+
+      var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+      // 마커가 표시될 위치입니다
+      var markerPosition  = new daum.maps.LatLng(37.5009666, 127.00333);
+
+      // 마커를 생성합니다
+      var marker = new daum.maps.Marker({
+          position: markerPosition
+      });
+
+      // 마커가 지도 위에 표시되도록 설정합니다
+      marker.setMap(map);
+
+    </script>
+
+
+  </div>
+
+  <div id="footer">
+    @SSONG
+  </div>
+
+</body>
 </html>
